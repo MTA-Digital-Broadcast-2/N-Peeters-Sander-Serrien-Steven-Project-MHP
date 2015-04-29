@@ -27,14 +27,15 @@ public class HelloTVXlet implements Xlet, HActionListener {
         
         if(titelString == "startQuiz"){
            System.out.println("DANSEEEEN");
+           titelLabel = new HStaticText("Wie is een banaan?");
+           scene.add(titelLabel);
+           
            
         }
         else
         {
             System.out.println("Geen feestje sorry");
-            scene.remove(titelLabel);
-            scene.remove(knop2);
-            scene.remove(knop1);
+            System.exit(0);
             
         }
         
